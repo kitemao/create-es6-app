@@ -6,12 +6,13 @@ const webpack = require('webpack');
 module.exports = {
     mode: 'development',
     entry: {
-        app: ['babel-polyfill', './src/index.js']
+        app: ['./src/index.js']
     },
     devtool: 'inline-source-map',
     devServer: {
         contentBase: './dist',
-        hot: true
+        hot: true,
+        port: 9100
     },
     module: {
         rules: [

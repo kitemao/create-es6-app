@@ -6,4 +6,8 @@ function component() {
     return element;
 }
 
+async function component1() {
+    Object.from();
+}
+
 document.body.appendChild(component());
